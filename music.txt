@@ -1,0 +1,5 @@
+Database Gestion_studio
+create table Chanteur(Id_chanteur int(4) auto_increment primary key,nom varchar(6));
+create table Clients(Id_client int(4) auto_increment primary key,nom_client varchar(10),adresse varchar(10),numero_tel varchar(8));
+create table music(Id_music int(6) auto_increment primary key,title_music varchar(6),Id_chanteur int(5));
+create table Ventes(Id_Vente int(4) auto_increment primary key,Id_music int(4),Id_client int(4),prix varchar(6));
